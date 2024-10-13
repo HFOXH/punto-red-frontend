@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# SOLUCIÓN PRUEBA TÉCNICA:PROCESO DE SELECCIÓN/ DESARROLLADOR FULL STACK
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta prueba fue desarrollada por Santiago Cardenas el día 12 de octubre de 2024.
 
-## Available Scripts
+## Tecnologias usadas
 
-In the project directory, you can run:
+#### Front end
+`React` `Axios` `TailwindCSS`
 
-### `npm start`
+#### Back end
+`Spring Boot` `MySQL` `Java v17`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ¿Cómo iniciar el proyecto de forma local?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Construí el proyecto para que se trabajase con la versión 21 de java, sin embargo al momento de subirlo al servidor fue necesario bajar la versión a la 17, aun asi el proyecto funciona con ambas versiones.
 
-### `npm test`
+Para iniciar el backend, simplemente dirígete a la clase de PrApplication y corre la clase.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+En el caso del front end, al ser una aplicación react, es necesario que uses los comandos `npm install` y `npm run serve`.
 
-### `npm run build`
+No olvides encender el servidor de la base de datos, en mi caso he utilizado xampp, y como comenté al inicio la base de datos es MySQL, no es necesario crear la BD, puesto que para ello puse el parametro: `createDatabaseIfNotExist=true`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Esto permitirá que la aplicación funcione correctamente en su entorno local!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estructura Back end
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Solamente hay un controlador nombrado `Transaction`, esto por ser un proyecto pequeño, el controlador tiene los endpoints para generar una compra `buy` (servicio Punto red), obtener los proveedores `suppliers` (servicio Punto red) y obtener las transacciones `Transaction` (Base de datos).
 
-### `npm run eject`
+Dentro de la carpeta helpers veras el servicio e interfaz para la conexión con el API de punto red.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Dentro de enties and repositories veras la entidad, servicio y repositorio de la unica tabla que tiene la base de datos nombrada `Transaction`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Endpoints
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+GET https://punto-red-backend-production.up.railway.app/transaction/transactions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+GET https://punto-red-backend-production.up.railway.app/transaction/suppliers
 
-## Learn More
+POST https://punto-red-backend-production.up.railway.app/transaction/buy
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Script de la base de datos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Las migraciones de base de datos están gestionadas con Flyway, lo que asegura que el esquema de la base de datos evolucione de manera controlada. Las migraciones se encuentran en el directorio `bd`.
 
-### Code Splitting
+## Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Front end:** https://solucionpruebapuntoredsc.netlify.app/
+**Back end:** https://punto-red-backend-production.up.railway.app/transaction/suppliers
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desarrollado por <a href="https://santic.netlify.app/">Santiago Cardenas</a>.
+Made with ❤️
