@@ -13,7 +13,7 @@ const RechargeForm = ({ onSuccessfulBuy }) => {
 
   const [errors, setErrors] = useState({});
 
-  const url = 'http://localhost:8080';
+  const url = 'https://punto-red-backend-production.up.railway.app';
 
   const fetchSuppliers = async () => {
     try {

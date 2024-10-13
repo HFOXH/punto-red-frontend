@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function App() {
   const [transactions, setTransactions] = useState([]);
-  const url = 'http://localhost:8080';
+  const url = 'https://punto-red-backend-production.up.railway.app';
 
   const getTransactions = async () => {
     try {
