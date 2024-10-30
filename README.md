@@ -1,6 +1,9 @@
 # SOLUCIÓN PRUEBA TÉCNICA:PROCESO DE SELECCIÓN/ DESARROLLADOR FULL STACK
 
-Esta prueba fue desarrollada por Santiago Cardenas el día 12 de octubre de 2024.
+Esta prueba fue desarrollada por mi persona Santiago Cardenas el día 12 de octubre de 2024 para la empresa punto red. Creo que no revisaron esto, ya no importa, Se median 3 niveles: 
+Nivel 1: Almacenar cada transacción en BD y listar esa informacion.
+Nivel 2: Creación de una web conectada al api, mostrar la información del ticket y ver el modulo para consultar la transacción. (Un post y un get, lo normal).
+Nivel 3: Hostear todo (Quedo en... en las urls, lee).
 
 ## Tecnologias usadas
 
@@ -48,6 +51,4 @@ Las migraciones de base de datos están gestionadas con Flyway, lo que asegura q
 **Back end:** https://punto-red-backend-production.up.railway.app/transaction/suppliers
 
 Desarrollado por <a href="https://santic.netlify.app/">Santiago Cardenas</a>.
-Made with ❤️
-
-Nota personal: No olvidar! --> Esta es la ultima prueba que realizo, el código vale y el tiempo mas.
+**Nota personal:** No olvidar! --> Esta es la ultima prueba que realizo, el código vale y el tiempo mas. Solo, me canse de seguir haciendo pruebas, me canse de perder el tiempo, no encuentro la motivación para seguir haciendo estas pruebas tecnicas, tener entrevistas y perder mi tiempo, 6 dias haciendo una  prueba tecnica, una hora de prueba teorica, preguntas de cómo has estado (bien), como te ves en 3 años (como un gran profesional), por que quieres trabajar (Siempre me ha interesado no morirme de hambre).... y el resultado es que hay alguien con 7 años de experiencia que tiene toda la teoria de wikipedia y cobra el minimo en COP. Si eres alguna persona que se siente igual, no importa sigue adelante y... **Recuerda:** 나 엿먹지마, 집중하고 계속해
