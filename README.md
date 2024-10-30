@@ -49,3 +49,5 @@ Las migraciones de base de datos están gestionadas con Flyway, lo que asegura q
 
 Desarrollado por <a href="https://santic.netlify.app/">Santiago Cardenas</a>.
 Made with ❤️
+
+Nota personal: No olvidar! --> Esta es la ultima prueba que realizo, el código vale y el tiempo mas.
